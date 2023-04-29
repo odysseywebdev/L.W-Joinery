@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L.W Joinery</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<script src="https://kit.fontawesome.com/5dd877f52e.js" crossorigin="anonymous"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;1,800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div>
+  <h1 class="animate__animated animate__backInDown">
+  <img class="logo" src="images/logo_transparent.png"></h1>
+</div>
+<h3>About us</h3>
+<p class="about-us-text">You can change this text to fit your company, but heres an rough idea of what it could  look like.
+Meet the talented craftsman behind L.W Joinery - a business specializing in loft conversions, loft ladders, and flooring. With years of experience under their belt, they have gained a reputation for delivering high-quality and bespoke joinery services. Whether you're looking to convert your loft into a cozy living space or simply need some new flooring installed, L.W Joinery has got you covered. Trust them to turn your vision into a reality with their skillful craftsmanship and attention to detail.</p>
+
+<h3>you can show some of your work off here so clients have an idea on what you can do</h3>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/joiner1.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/joiner2.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/joiner3.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/joiner4.png">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/joiner5.png">
+  </div>
+
+
+  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+  <button class="next" onclick="plusSlides(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
+
+
+</script>
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <form action="" method="post">
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" onclick="location.href='mailto:youremail@example.com?subject=Contact Us Form Submission&body=' + encodeURIComponent(document.getElementById('message').value)">Submit</button>
+  </form>
+
+</section>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact Us</h3>
+        <p><strong>Address:</strong> 1 odysseyweb street, glasgow</p>
+        <p><strong>Phone:</strong> 07123456789</p>
+        <p><strong>Email:</strong> odysseywebdev@outlook.com</p>
+      </div>
+      <div class="col-md-6">
+        <h3>About Us</h3>
+        <p>L.W Joinery</p>
+        <p>Hi, we're a business specializing in loft conversions, loft ladders, and flooring.</p>
+        <p>Developed by <a href="https://odysseywebdev.github.io/odysseyweb/index.html">Odysseyweb</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
